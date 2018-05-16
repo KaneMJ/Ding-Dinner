@@ -1,0 +1,133 @@
+html {
+    font-size: 4vmin;
+}
+
+body {
+    margin: 0;
+    font-size: 0;
+}
+
+.btn-large {
+    border-radius: 10px;
+}
+
+.mainContentContainer {
+    margin: 0;
+    position: relative;
+}
+
+.desktop-gutter {
+    position: fixed;
+    height: 100%;
+}
+
+.gutter-left {
+    left: 0;
+}
+
+.left-gutter-img {
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/images/dingHDGutter_Dark.jpg');
+    background-position: 45% 50%;
+}
+
+.gutter-right {
+    right: 0;
+}
+
+.right-gutter-img {
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/images/dingHDGutter_Dark.jpg');
+    background-position: 35% 50%;
+}
+
+.left-gutter-img, .right-gutter-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainContainer {
+    height: 77.5%;
+}
+
+.collection {
+    overflow: visible;
+}
+
+.ubuntuFont {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.oxygenFont {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.button {
+    height: 52px;
+    line-height: 26px;
+    margin: 4% auto;
+    text-shadow: 1px 2px 2px black;
+}
+
+.empty {
+    width: 5vw;
+}
+
+.completeButton {
+    margin-bottom: 2vh;
+}
+
+@media all and (min-width: 600px) and (orientation: landscape) {    
+    .mainContentContainer {
+        display: flex;
+    }
+
+    .mainContentContainer > * {
+        box-sizing: border-box;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+    }
+
+    .desktop-gutter {
+        width: 20%;
+    }
+
+    .mainContentContainer > .loginContainer > .loginLogo {
+        padding-top: 1%;
+    }
+
+    .mainContentContainer > .loginContainer > .loginButtons > button {
+        height: 10vh;
+        width: 40%;
+        margin: 0;
+        font-size: 1.4rem;
+    }
+    
+    .mainContentContainer > .loginContainer > .loginButtons {
+        height: 50%;
+        margin-top: 0;
+    }
+
+    .mainContentContainer > .loginContainer > .loginLogo {
+        width: 40%;
+        margin-top: 1%;
+    }
+
+    .mainContentContainer > .loginContainer > .loginSlogan {
+        margin-bottom: 3%;
+    }
+
+    .mainContentContainer > .loginContainer > .loginButtons > input {
+        height: 1.5rem;
+    }
+
+    .loginButtons > div > .row {
+        margin-top: 1% !important;
+    }
+
+    .row > div.inputField > input {
+        height: 1.8rem;
+    }     
+}
